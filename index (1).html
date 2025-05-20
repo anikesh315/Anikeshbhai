@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOTTERY 7 HACK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .header img {
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #ff004f, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status {
+            color: #00ff95;
+            font-size: 1.2em;
+            margin-top: -10px;
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            width: 90%;
+            max-width: 250px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+            margin-top: 20px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .buttons button {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(45deg, #ff5f6d, #ffc371);
+            box-shadow: 0 5px 15px rgba(255, 95, 109, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .buttons button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 95, 109, 0.6);
+        }
+
+        #result-box {
+            margin: 40px auto 0;
+            padding: 30px;
+            width: 90%;
+            max-width: 300px;
+            background: rgba(0, 255, 217, 0.1);
+            border: 2px solid #00ffd9;
+            border-radius: 15px;
+            font-size: 2em;
+            font-weight: bold;
+            color: #00ffd9;
+            text-shadow: 0 0 15px #00ffd9;
+            display: none;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Screenshot_20250519-203654_Telegram.jpg" alt="App Icon">
+        <h1>LOTTERY 7 HACK</h1>
+    </div>
+    <p class="status">Server Activity: LIVE</p>
+    <p>Advanced Prediction System</p>
+
+    <input type="text" id="period" placeholder="Enter Period Number">
+
+    <div class="buttons">
+        <button onclick="startPrediction()">Start Prediction</button>
+        <button onclick="window.open('https://t.me/+W3BkQsnjkdtjNjM9', '_blank')">Telegram</button>
+        <button onclick="window.open('http://t.me/RAJBHAI_78', '_blank')">Support</button>
+    </div>
+
+    <div id="result-box"></div>
+
+    <!-- Sound effect -->
+    <audio id="predictSound" src="https://assets.mixkit.co/sfx/download/mixkit-arcade-retro-game-over-213.wav" preload="auto"></audio>
+
+    <script>
+        function startPrediction() {
+            const period = document.getElementById('period').value.trim();
+            const resultBox = document.getElementById('result-box');
+            const sound = document.getElementById('predictSound');
+
+            if (!period) {
+                alert('Please enter a period number.');
+                return;
+            }
+
+            // Random pick
+            const pick = (Math.random() < 0.5) ? 'BIG' : 'SMALL';
+
+            // Show result
+            resultBox.textContent = pick;
+            resultBox.style.display = 'block';
+
+            // Play sound
+            sound.currentTime = 0;
+            sound.play();
+        }
+    </script>
+</body>
+</html>
